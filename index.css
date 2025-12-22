@@ -1,0 +1,13 @@
+/* index.html 메인 버튼 및 이미지 양옆맞춤 */
+.main-img-btn {
+  padding: 0;
+  border: none;
+  background: none;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+.main-img {
+  width: 100%;
+  display: block;
+}
