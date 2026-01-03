@@ -1,4 +1,3 @@
-
 header {
   position: fixed;
   top: 0;
@@ -6,19 +5,13 @@ header {
   width: 100%;
   z-index: 100;
 }
-
 .header-img {
   width: 100%;
   display: block;
 }
 
-.header-divider {
-  width: 100%;
-  height: 1px;
-  background: #e0e0e0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
+
+
 
 body {
   padding-top: 80px;
@@ -29,17 +22,19 @@ body {
   width: 100%;
   margin-top: 36px;
 }
+
 .sec1 {
+  width: 36vw;
   flex: 0 0 36%;
   height: calc(100vh - 80px);
   overflow-y: auto;
   background: #2196f3;
-  margin-left: 132px;
-  scrollbar-width: none;      /* Firefox */
+  margin-left: 7.8vw;
+  scrollbar-width: none;
   -ms-overflow-style: none;   /* IE, Edge */
 }
 .sec1::-webkit-scrollbar {
-  display: none;              /* Chrome, Safari, Opera */
+  display: none;
 }
 
 .sec1 img {
@@ -48,18 +43,33 @@ body {
 }
 
 
+
+
 .sec2 {
   position: fixed;
-  top: 140px;
+  top: 110px;
   right: 0;
-  width: 46%;
+  width: 46vw;
   height: calc(100vh - 80px);
   background: #4caf50;
-  margin-right: 138px;
+  margin-right: 7.8vw;
   overflow-y: auto;
 }
-
+.sec2::-webkit-scrollbar {
+  display: none;
+}
 .sec2 img {
   width: 100%;
   object-fit: cover;
+}
+.sec2-top {
+  display: flex;
+  gap: 12px; /* 버튼 사이 간격 */
+  margin-bottom: 16px;
+}
+
+.sec2-bottom img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
