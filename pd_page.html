@@ -28,20 +28,25 @@
 			
 			<div class="sec2">
 				<div class="sec2-top">
-					<button>ALL</button>
-					<button>REFLECTIVE</button>
-					<button>SILHOUETTE</button>
-					<button>COMFORT</button>
-					<button>SUPPORT</button>
+					<button onclick="changeImage('buy_img.png')">ALL</button>
+					<button onclick="changeImage('reflective_img.png')">REFLECTIVE</button>
+					<button onclick="changeImage('silhouette_img.png')">SILHOUETTE</button>
+					<button onclick="changeImage('comfort_img.png')">COMFORT</button>
+					<button onclick="changeImage('support_img.png')">SUPPORT</button>
 				</div>
 				<div class="sec2-bottom">
 					<button class="gopdbtn" onclick="location.href='https://www.xexymix.com/shop/shopdetail.html?branduid=2073713&search=rx+%B8%AE%C7%C3%B7%BA%C6%BC%BA%EA&sort=regdate&xcode=033&mcode=003&scode=002&GfDT=bm5%2FW14%3D'">
-      					<img src="buy_img.png" alt="LandingPage" class="main-img">
+      					<img src="buy_img.png" alt="LandingPage" class="main-img" id="mainImage">
     				</button>
 				</div>
 			</div>
 		
 		</div>
 	</main>
+	<script>
+    function changeImage(imgName) {
+        document.getElementById('mainImage').src = imgName;
+    }
+    </script>
 </body>
 </html>

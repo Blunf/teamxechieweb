@@ -47,25 +47,36 @@ body {
 
 .sec2 {
   position: fixed;
-  top: 110px;
   right: 0;
   width: 46vw;
   height: calc(100vh - 80px);
-  background: #4caf50;
-  margin-right: 7.8vw;
+  background: #9c5252;
+  margin-right: 8.4vw;
   overflow-y: auto;
 }
 .sec2::-webkit-scrollbar {
   display: none;
 }
-.sec2 img {
-  width: 100%;
-  object-fit: cover;
-}
+
 .sec2-top {
   display: flex;
   gap: 12px; /* 버튼 사이 간격 */
   margin-bottom: 16px;
+}
+
+.sec2-top button {
+  border-radius: 24px;
+  background: #f5f5f5;
+  border: 1px solid #111;
+  color: #393939;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.sec2-top button:hover {
+  background: #e0e0e0;
+  color: #000;
 }
 
 .sec2-bottom img {
