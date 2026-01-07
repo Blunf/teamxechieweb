@@ -3,28 +3,35 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 100;
+
 }
 .header-img {
-  width: 100%;
+  width: 1920px;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
 
 
-body {
-  padding-top: 80px;
+main {  
+  width: 1920px;
+  display: block;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-sections {
   display: flex;
   width: 100%;
-  margin-top: 36px;
+  margin-top: 100px;
 }
 
 .sec1 {
   width: 36vw;
+  min-width: 500px;
   flex: 0 0 36%;
   height: calc(100vh - 80px);
   overflow-y: auto;
@@ -32,6 +39,7 @@ body {
   margin-left: 7.8vw;
   scrollbar-width: none;
   -ms-overflow-style: none;   /* IE, Edge */
+  padding-top: 40px;
 }
 .sec1::-webkit-scrollbar {
   display: none;
@@ -46,13 +54,15 @@ body {
 
 
 .sec2 {
-  position: fixed;
-  right: 0;
+  /* position: fixed; 제거로 flex item이 됨 */
   width: 46vw;
+  min-width: 900px;
   height: calc(100vh - 80px);
-  background: #9c5252;
+  background: #ffffff;
+  margin-left: 10px;
   margin-right: 8.4vw;
   overflow-y: auto;
+  padding-top: 50px; /* body와 동일하게 헤더 높이+여백만큼 상단 여백 */
 }
 .sec2::-webkit-scrollbar {
   display: none;
@@ -60,14 +70,20 @@ body {
 
 .sec2-top {
   display: flex;
-  gap: 12px; /* ��ư ���� ���� */
-  margin-bottom: 16px;
+  gap: 12px; /* 버튼 사이 간격 */
+  margin-bottom: 1px;
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 10;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .sec2-top button {
   border-radius: 24px;
-  background: #f5f5f5;
-  border: 1px solid #111;
+  background: #f8f8f8;
+  border: 1px solid #efefef;
   color: #393939;
   padding: 4px 8px;
   font-size: 0.8rem;
@@ -80,7 +96,10 @@ body {
 }
 
 .sec2-bottom img {
-  width: 100%;
+  width: 1000px;
   height: auto;
   display: block;
+  max-width: 100%; /* Added for responsiveness */
+  box-sizing: border-box; /* Added for box sizing */
+  border: none;
 }
