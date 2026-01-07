@@ -22,12 +22,15 @@ main {
   margin-left: auto;
   margin-right: auto;
 }
-
 .main-sections {
   display: flex;
-  width: 100%;
-  margin-top: 100px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
 }
+
+
+
 
 .sec1 {
   width: 36vw;
@@ -54,7 +57,7 @@ main {
 
 
 .sec2 {
-  /* position: fixed; ì œê±°ë¡œ flex itemì´ ë¨ */
+  /* position: fixed; ? œê±°ë¡œ flex item?´ ?¨ */
   width: 46vw;
   min-width: 900px;
   height: calc(100vh - 80px);
@@ -62,7 +65,7 @@ main {
   margin-left: 10px;
   margin-right: 8.4vw;
   overflow-y: auto;
-  padding-top: 50px; /* bodyì™€ ë™ì¼í•˜ê²Œ í—¤ë” ë†’ì´+ì—¬ë°±ë§Œí¼ ìƒë‹¨ ì—¬ë°± */
+  padding-top: 50px; /* body??? ?™?¼?•˜ê²? ?—¤?” ?†’?´+?—¬ë°±ë§Œ?¼ ?ƒ?‹¨ ?—¬ë°? */
 }
 .sec2::-webkit-scrollbar {
   display: none;
@@ -70,7 +73,7 @@ main {
 
 .sec2-top {
   display: flex;
-  gap: 12px; /* ë²„íŠ¼ ì‚¬ì´ ê°„ê²© */
+  gap: 12px; /* ë²„íŠ¼ ?‚¬?´ ê°„ê²© */
   margin-bottom: 1px;
   position: sticky;
   top: 0;
