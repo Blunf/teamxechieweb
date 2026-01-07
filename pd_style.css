@@ -3,6 +3,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1000;
 
 }
 .header-img {
@@ -38,7 +39,6 @@ main {
   flex: 0 0 36%;
   height: calc(100vh - 80px);
   overflow-y: auto;
-  background: #2196f3;
   margin-left: 7.8vw;
   scrollbar-width: none;
   -ms-overflow-style: none;   /* IE, Edge */
@@ -65,7 +65,7 @@ main {
   margin-left: 10px;
   margin-right: 8.4vw;
   overflow-y: auto;
-  padding-top: 50px; /* body??? ?èô?ùº?ïòÍ≤? ?ó§?çî ?Üí?ù¥+?ó¨Î∞±Îßå?Åº ?ÉÅ?ã® ?ó¨Î∞? */
+  padding-top: 50px; 
 }
 .sec2::-webkit-scrollbar {
   display: none;
@@ -76,7 +76,7 @@ main {
   gap: 12px; /* Î≤ÑÌäº ?Ç¨?ù¥ Í∞ÑÍ≤© */
   margin-bottom: 1px;
   position: sticky;
-  top: 0;
+  top: -20px;
   background: #ffffff;
   z-index: 10;
   padding-top: 16px;
